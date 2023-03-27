@@ -1,0 +1,22 @@
+{% load static %}
+
+<nav class="nav">
+            <div class="container">
+                <div class="row justify__content__between nav__row">
+                    <div class="col-auto nav__block">
+                        <img class="nav__img" src="{% static 'img/logo.svg' %}" alt="Travanex"/>
+                    </div>
+                    <div class="col-auto nav__block">
+                        {% block sidebar %}
+                        <ul>
+                            <li class="nav__item"><a class="nav__link" href="{% url 'index' %}">Home</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Explore</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Destination</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Travel guide</a></li>
+                        </ul>
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </nav>

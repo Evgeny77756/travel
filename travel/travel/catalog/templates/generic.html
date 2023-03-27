@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        {% block title %}
+		<title>Travel</title>
+        {% endblock %}
+
+        {% load static %}
+		<link href="{% static 'css/reset.css' %}" rel="stylesheet"/>
+		<link href="{% static 'css/setka.css' %}" rel="stylesheet"/>
+		<link href="{% static 'css/main.css' %}" rel="stylesheet"/>
+
+	</head>
+	<body>
+
+
+
+        {% block content %}{% endblock %}
+        <footer class="footer">
+
+        <div class="container">
+            <div class="row justify__content__between">
+
+                <div class="col-auto row">
+
+                    <div class="col-auto">
+                        <h2 class="footer__title">EXPLORE</h2>
+                        <ul>
+                            <li><a class="footer__txt" href="#">Mountain</a></li>
+                            <li><a class="footer__txt" href="#">Sea & Beach</a></li>
+                            <li><a class="footer__txt" href="#">Forest</a></li>
+                            <li><a class="footer__txt" href="#">Lake</a></li>
+                            <li><a class="footer__txt" href="#">Temples</a></li>
+                            <li><a class="footer__txt" href="#">Gardens</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-auto">
+                        <h2 class="footer__title">Top Places</h2>
+                        <ul>
+                            <li><a class="footer__txt" href="#">Bali, Indonesia</a></li>
+                            <li><a class="footer__txt" href="#">Tokyo, Japan</a></li>
+                            <li><a class="footer__txt" href="#">Bangkok, Thailand</a></li>
+                            <li><a class="footer__txt" href="#">Arizona, USA</a></li>
+                            <li><a class="footer__txt" href="#">Melbourne, Australie</a></li>
+                            <li><a class="footer__txt" href="#">Seoul, South Korea</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-auto">
+                        <h2 class="footer__title">EXPLORE</h2>
+                        <ul>
+                            <li><a class="footer__txt" href="#">Forum</a></li>
+                            <li><a class="footer__txt" href="#">Travel Guide</a></li>
+                            <li><a class="footer__txt" href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-3 footer__right">
+                    <h2 class="footer__title">CONNECT WITH US</h2>
+                    <p class="footer__txt">Brian Adams St. 56 Travanex Office Stray Tower 2, Janeiro Sao Paolo, Brazil (ZIP 12214) </p>
+                    <a class="footer__txt" href="tel:+5548126055">(+55) 48126055</a>
+
+                    <ul class="footer__soc">
+                        <li class="footer__item"><a href=""><img src="{% static 'img/soc/1.svg' %}"/></a></li>
+                        <li class="footer__item"><a href=""><img src="{% static 'img/soc/2.svg' %}"/></a></li>
+                        <li class="footer__item"><a href=""><img src="{% static 'img/soc/3.svg' %}"/></a></li>
+                        <li class="footer__item"><a href=""><img src="{% static 'img/soc/4.svg' %}"/></a></li>
+                        <li class="footer__item"><a href=""><img src="{% static 'img/soc/5.svg' %}"/></a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="row justify__content__center">
+                <p class="footer__cop">2023 © Travanex. All rights reserved</p>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+	</body>
+</html>

@@ -1,0 +1,218 @@
+{% extends "generic.html" %}
+
+{% block content %}
+{% load static %}
+<header class="header">
+
+    {% include "includes/nav.html" %}
+    {% include "includes/header.html" %}
+
+</header>
+
+	<section class="travel">
+			<div class="container">
+
+				<div class="row justify__content__between travel__row">
+					<div class="col-auto">
+						<div class="travel__before">
+							<h2 class="travel__title">Popular Travel</h2>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="travel__befores">
+							<a class="travel__link" href="travel/index.html">VIEW MORE</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row travel__block">
+
+					<a href="travel/article/index.html" class="col-6 travel__item">
+						<img class="travel__img" src="{% static 'img/travel/1.jpg' %}" alt="Bali, Indonesia"/>
+						<div class="travel__pozition">
+							<h3 class="travel__name">Bali, Indonesia</h3>
+						</div>
+					</a>
+
+					<a href="travel/article/index.html" class="col-6 travel__item">
+						<img class="travel__img" src="{% static 'img/travel/1.jpg' %}" alt="Bali, Indonesia"/>
+						<div class="travel__pozition">
+							<h3 class="travel__name">Bali, Indonesia</h3>
+						</div>
+					</a>
+
+					<a href="travel/article/index.html" class="col-6 travel__item">
+						<img class="travel__img" src="{% static 'img/travel/1.jpg' %}" alt="Bali, Indonesia"/>
+						<div class="travel__pozition">
+							<h3 class="travel__name">Bali, Indonesia</h3>
+						</div>
+					</a>
+
+					<a href="travel/article/index.html" class="col-6 travel__item">
+						<img class="travel__img" src="{% static 'img/travel/1.jpg' %}" alt="Bali, Indonesia"/>
+						<div class="travel__pozition">
+							<h3 class="travel__name">Bali, Indonesia</h3>
+						</div>
+					</a>
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<section class="location">
+			<div class="container">
+
+				<div class="row justify__content__between travel__row">
+					<div class="col-auto">
+						<div class="">
+							<h2 class="travel__title">Based on your Location</h2>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="travel__befores">
+							<a class="travel__link" href="location/index.html">VIEW MORE</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row location__block">
+
+
+					<div class="col-6 row location__item">
+						<div class="col-4">
+							<img class="location__img" src="{% static 'img/location/1.jpg' %}"/>
+						</div>
+						<div class="col-8">
+							<h1 class="location__title">MOUNTAIN</h1>
+							<h2 class="location__subtitle">Swiss Mountain</h2>
+							<p class="location__txt">The Matterhorn, Switzerland's iconic pointed peak is one of the highest mountains in the Alps. On the border with Italy, this legendary peak rises to 4,478 meters, and its four steep faces lie in the direction of the compass points.</p>
+							<a href="location/article/index.html" class="location__link">View details</a>
+						</div>
+					</div>
+
+
+					<div class="col-6 row location__item">
+						<div class="col-4">
+							<img class="location__img" src="{% static 'img/location/2.jpg' %}"/>
+						</div>
+						<div class="col-8">
+							<h1 class="location__title">MOUNTAIN</h1>
+							<h2 class="location__subtitle">The Matterhorn</h2>
+							<p class="location__txt">The Matterhorn, Switzerland's iconic pointed peak is one of the highest mountains in the Alps. On the border with Italy, this legendary peak rises to 4,478 meters, and its four steep faces lie in the direction of the compass points.</p>
+							<a href="location/article/index.html" class="location__link">View details</a>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<section class="blog">
+			<div class="container">
+
+				<div class="row justify__content__between travel__row">
+					<div class="col-auto">
+						<div class="">
+							<h2 class="travel__title">Blog</h2>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="travel__befores">
+							<a class="travel__link" href="blog/index.html">VIEW MORE</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row blog__block">
+
+					<a href="blog/article/index.html" class="col-4 blog__link">
+						<img class="blog__img" src="{% static 'img/blog/1.png' %}"/>
+						<ul class="blog__list">
+							<li class="blog__item">Culinary</li>
+							<li class="blog__item">·</li>
+							<li class="blog__item"><data>1 hour ago</data></li>
+						</ul>
+						<h2 class="blog__title">The Best Dishes to Eat in Thailand</h2>
+						<p class="blog__txt">Pad thai is one of Thailands national dishes and is a go-to for tourists who are starting out their Thai cuisine exploration. Pad thai is a fried noodle dish which is...</p>
+						<span class="blog__green">Read more</span>
+					</a>
+
+
+					<a href="blog/article/index.html" class="col-4 blog__link">
+						<img class="blog__img" src="{% static 'img/blog/2.png' %}"/>
+						<ul class="blog__list">
+							<li class="blog__item">Culinary</li>
+							<li class="blog__item">·</li>
+							<li class="blog__item"><data>1 hour ago</data></li>
+						</ul>
+						<h2 class="blog__title">The Best Dishes to Eat in Thailand</h2>
+						<p class="blog__txt">Pad thai is one of Thailands national dishes and is a go-to for tourists who are starting out their Thai cuisine exploration. Pad thai is a fried noodle dish which is...</p>
+						<span class="blog__green">Read more</span>
+					</a>
+
+					<a href="blog/article/index.html" class="col-4 blog__link">
+						<img class="blog__img" src="{% static 'img/blog/3.png' %}"/>
+						<ul class="blog__list">
+							<li class="blog__item">Culinary</li>
+							<li class="blog__item">·</li>
+							<li class="blog__item"><data>1 hour ago</data></li>
+						</ul>
+						<h2 class="blog__title">The Best Dishes to Eat in Thailand</h2>
+						<p class="blog__txt">Pad thai is one of Thailands national dishes and is a go-to for tourists who are starting out their Thai cuisine exploration. Pad thai is a fried noodle dish which is...</p>
+						<span class="blog__green">Read more</span>
+					</a>
+
+					<a href="blog/article/index.html" class="col-4 blog__link">
+						<img class="blog__img" src="{% static 'img/blog/4.png' %}"/>
+						<ul class="blog__list">
+							<li class="blog__item">Culinary</li>
+							<li class="blog__item">·</li>
+							<li class="blog__item"><data>1 hour ago</data></li>
+						</ul>
+						<h2 class="blog__title">The Best Dishes to Eat in Thailand</h2>
+						<p class="blog__txt">Pad thai is one of Thailands national dishes and is a go-to for tourists who are starting out their Thai cuisine exploration. Pad thai is a fried noodle dish which is...</p>
+						<span class="blog__green">Read more</span>
+					</a>
+
+					<a href="blog/article/index.html" class="col-4 blog__link">
+						<img class="blog__img" src="{% static 'img/blog/5.png' %}"/>
+						<ul class="blog__list">
+							<li class="blog__item">Culinary</li>
+							<li class="blog__item">·</li>
+							<li class="blog__item"><data>1 hour ago</data></li>
+						</ul>
+						<h2 class="blog__title">The Best Dishes to Eat in Thailand</h2>
+						<p class="blog__txt">Pad thai is one of Thailands national dishes and is a go-to for tourists who are starting out their Thai cuisine exploration. Pad thai is a fried noodle dish which is...</p>
+						<span class="blog__green">Read more</span>
+					</a>
+
+					<a href="blog/article/index.html" class="col-4 blog__link">
+						<img class="blog__img" src="{% static 'img/blog/6.png' %}"/>
+						<ul class="blog__list">
+							<li class="blog__item">Culinary</li>
+							<li class="blog__item">·</li>
+							<li class="blog__item"><data>1 hour ago</data></li>
+						</ul>
+						<h2 class="blog__title">The Best Dishes to Eat in Thailand</h2>
+						<p class="blog__txt">Pad thai is one of Thailands national dishes and is a go-to for tourists who are starting out their Thai cuisine exploration. Pad thai is a fried noodle dish which is...</p>
+						<span class="blog__green">Read more</span>
+					</a>
+
+
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+
+
+{% endblock %}
